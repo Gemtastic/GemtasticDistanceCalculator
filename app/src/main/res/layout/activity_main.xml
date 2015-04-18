@@ -79,14 +79,14 @@
 
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:id="@+id/stopDistWet"
             android:text="@string/stoppingDistanceWet"
             android:onClick="onStopDistWetClick"
             android:layout_gravity="center" />
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:id="@+id/stopDistDry"
             android:text="@string/stoppingDistanceDry"
@@ -94,7 +94,7 @@
             android:layout_gravity="center"/>
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:text="@string/distanceTraveled"
             android:id="@+id/disTravel"
@@ -107,7 +107,7 @@
             android:text="@string/exit"
             android:layout_gravity="center"
             android:onClick="onExitClick"
-            android:id="@+id/exit"/>
+            android:id="@+id/exit" />
 
     </LinearLayout>
 
