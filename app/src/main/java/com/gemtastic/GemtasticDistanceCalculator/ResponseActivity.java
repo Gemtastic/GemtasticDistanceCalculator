@@ -57,7 +57,7 @@ public class ResponseActivity extends Activity implements SensorEventListener{
 
         float x = event.values[0];
 
-        if(x < -4){
+        if(x < -4 || x > 4){
             finish();
         }
     }
