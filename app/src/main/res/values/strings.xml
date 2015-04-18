@@ -1,0 +1,30 @@
+<resources>
+
+    <string name="app_name">DistanceCalculator</string>
+    <string name="greeting">Welcome to DistanceCalculator!</string>
+    <string name="action_settings">Settings</string>
+    <string name="stoppingDistanceDry">Stopping distance dry weather</string>
+    <string name="stoppingDistanceWet">Stopping distance wet weather</string>
+    <string name="distanceTraveled">Calculate distance during 3 sec</string>
+    <string name="icon">Icon</string>
+    <string name="exit">Exit app</string>
+    <string name="snowFlake">snowflake</string>
+    <string name="instructions">Enter your speed in km/h:</string>
+    <string name="kmph">km/h.</string>
+    <string name="resultPrefix">You will go about </string>
+    <string name="be_safe">Mind your speed! Please drive safely!</string>
+    <string name="result_activity">Result</string>
+
+    <string name="slippery">Hydroplaning, wet leaves, ice, sleet, snow; the dangers
+                            are many on the road. When you lose traction on your car
+                            you will more or less kep on going unhindered, hitting
+                            anything in your path.</string>
+    <string name="dry">Even though the road is dry and the sun is shining, please do
+                        be cautious of the content on the road. In the summer heat the
+                        road may become slippery on its own.</string>
+    <string name="distance">If you pick up your phone and look at a text for 3 seconds,
+                            this is how far you will go with no knowledge of what\'s going
+                            on in front of and around you.</string>
+    <string name="returnInstructions">Shake phone gently to get back to main.</string>
+
+</resources>

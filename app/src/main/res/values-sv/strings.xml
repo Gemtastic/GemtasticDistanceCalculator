@@ -1,0 +1,31 @@
+<resources>
+
+    <string name="action_settings">Inställningar</string>
+    <string name="app_name">LängdRäknare</string>
+    <string name="greeting">Välkommen till LängdRäknaren!</string>
+    <string name="stoppingDistanceDry">Stoppsträcka torrt väder</string>
+    <string name="stoppingDistanceWet">Stoppsträcka halt väder</string>
+    <string name="distanceTraveled">Räkna ut sträcka 3 sec</string>
+    <string name="icon">Ikon</string>
+    <string name="exit">Avsluta</string>
+    <string name="snowFlake">snöflinga</string>
+    <string name="instructions">Fyll i hastighet i km/h:</string>
+    <string name="kmph">km/h.</string>
+    <string name="resultPrefix">Du kommer att åka ca </string>
+    <string name="be_safe">Tänk på hastigheten! Kör försiktigt!</string>
+    <string name="result_activity">Resultat</string>
+    <string name="returnInstructions">Skaka telefonen lätt för att gå tillbaka</string>
+
+    <string name="slippery">Vattenplaning, löv, is, modd, snö; det finns många faror
+                            när man är ute och kör. När bilen tappar väggreppet kommer
+                            du mer eller mindre helt ohindrat fortsätta framåt, och kör
+                            in i allt i din väg.
+                            </string>
+    <string name="dry">Även om vägen är torr och solen skiner, vänligen fortsätt vara
+                        vaksam på omgivningen. Under sommaren när solen gassar kan vägen
+                        bli hal på grund av värmen.</string>
+    <string name="distance">Om du plockar upp din mobil och läser ett sms i tre sekunder
+                            är det så här många meter du rullar utan att veta vad som händer
+                            framför eller omkring dig.</string>
+
+</resources>
