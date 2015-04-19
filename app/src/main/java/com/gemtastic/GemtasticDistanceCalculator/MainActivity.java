@@ -4,17 +4,21 @@ import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-
+/**
+ * This is the main activity. Most of the application happens here.
+ *
+ *
+ */
 public class MainActivity extends ActionBarActivity {
 
     private final static Calculations calculations = new Calculations();
 
-    private Button stopDist;
+    private Button stopDistWet;
+    private Button stopDistDry;
     private Button distTravel;
     private Button exit;
 
@@ -23,7 +27,8 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        stopDist = (Button) findViewById(R.id.stopDistWet);
+        stopDistWet = (Button) findViewById(R.id.stopDistWet);
+        stopDistDry = (Button) findViewById(R.id.stopDistDry);
         distTravel = (Button) findViewById(R.id.disTravel);
         exit = (Button) findViewById(R.id.exit);
     }
@@ -38,11 +43,18 @@ public class MainActivity extends ActionBarActivity {
     }
 
 
+    /**
+     * This button handler calls for the logic of stopping on a dry road and
+     * sets the ResponseActivity with the appropriate keys for the dry road option.
+     *
+     * @param view
+     */
     public void onStopDistDryClick(View view){
 
         EditText numberInput = (EditText) findViewById(R.id.speed);
         String input = numberInput.getText().toString();
 
+        // Makes sure the user doesn't try to send empty EditText into the calculation
         if(!input.isEmpty()){
             int speed = Integer.parseInt(input);
 
@@ -60,6 +72,12 @@ public class MainActivity extends ActionBarActivity {
 
     }
 
+    /**
+     * This button handler calls for the logic of stopping on a slippery or wet road as
+     * well as sets the ResponseActivity with the appropriate keys for the wet road option.
+     *
+     * @param view
+     */
     public void onStopDistWetClick(View view){
 
         EditText numberInput = (EditText) findViewById(R.id.speed);
@@ -83,12 +101,20 @@ public class MainActivity extends ActionBarActivity {
 
     }
 
+    /**
+     * This button handler handles the distance you travel for 3 seconds. It calls for
+     * the logic of calculating it and sets ResponseActivity up with the correct keys
+     * and text.
+     *
+     * @param view
+     */
     public void onDistTravelClick(View view){
 
         EditText numberInput = (EditText) findViewById(R.id.speed);
 
         String input = numberInput.getText().toString();
 
+        // Makes sure the user doesn't try to send empty EditText into the calculation
         if(!input.isEmpty()){
             int speed = Integer.parseInt(input);
 
@@ -106,6 +132,11 @@ public class MainActivity extends ActionBarActivity {
 
     }
 
+    /**
+     * This button handler exits the application.
+     *
+     * @param view
+     */
     public void onExitClick(View view){
         finish();
     }

@@ -1,6 +1,8 @@
 package com.gemtastic.GemtasticDistanceCalculator;
 
 /**
+ * This is the logic class for distance calculations.
+ *
  * Created by Gemtastic on 2015-04-18.
  */
 public class Calculations {
@@ -12,6 +14,13 @@ public class Calculations {
     private final int ten = 10;
 
 
+    /**
+     * Calculates the distance you go ona a slippery road before you come to a full stop
+     * from the point where you detect that you need to slam the breaks.
+     *
+     * @param speed
+     * @return
+     */
     public int slippery(int speed){
         int result = 0;
         int friction = 3;
@@ -25,6 +34,13 @@ public class Calculations {
         return result;
     }
 
+    /**
+     * Calculates the distance you go on a dry road before you come to a full stop
+     * from the point where you detect that you need to slam the breaks.
+     *
+     * @param speed
+     * @return
+     */
     public int dry(int speed){
         int result = 0;
         int friction = 8;
@@ -34,14 +50,20 @@ public class Calculations {
         int reactionDistance = ((calcSpeed * reactionTime)/ kmToM)/ten;
         int breakingDistance = (calcSpeed * calcSpeed)/(magicEquationNumber * friction);
 
-        System.out.println(reactionDistance);
-        System.out.println(breakingDistance);
-
         result = (reactionDistance + breakingDistance);
 
         return result;
     }
 
+    /**
+     * This calculates how far you go before coming to a full stop on
+     * a dry road when you are tired.
+     *
+     * This method is to be implemented in the application.
+     *
+     * @param speed
+     * @return
+     */
     public int tired(int speed){
         int result = 0;
         int friction = 8;
@@ -49,7 +71,7 @@ public class Calculations {
 
         int calcSpeed = speed * ten;
 
-        int reactionDistance = ((calcSpeed * tiredReaction)/ kmToM);
+        int reactionDistance = ((calcSpeed * tiredReaction)/ kmToM)/ten;
         int breakingDistance = (calcSpeed * calcSpeed)/(magicEquationNumber * friction);
 
         result = (reactionDistance + breakingDistance);
@@ -57,6 +79,12 @@ public class Calculations {
         return result;
     }
 
+    /**
+     * Calculates the distance you travel during 3 seconds.
+     *
+     * @param speed
+     * @return
+     */
     public int howFarYouGo(int speed){
         int result = 0;
         int calcSpeed = speed * ten;
