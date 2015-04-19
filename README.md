@@ -14,3 +14,7 @@ This app assumes you have good breaks and tyres.
 
 ####Features####
 This application features a shake command to return to the main menu after you've gotten your result.
+
+
+####Compatibility####
+This application requires Android Gingerbread 2.3 and up to run.
