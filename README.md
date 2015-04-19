@@ -13,7 +13,9 @@ This app assumes you have good breaks and tyres.
 
 
 ####Features####
-This application features a shake command to return to the main menu after you've gotten your result.
+This application features:
+- A shake command to return to the main menu after you've gotten your result.
+- English and Swedish app language.
 
 
 ####Compatibility####
