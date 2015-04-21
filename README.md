@@ -20,3 +20,6 @@ This application features:
 
 ####Compatibility####
 This application requires Android Gingerbread 2.3 and up to run.
+
+####Apk####
+[You can find the apk here.](https://github.com/Gemtastic/GemtasticDistanceCalculator/tree/master/apk)
